@@ -19,3 +19,4 @@ c. Day of Week - User can choose all days or a specific day of the week to get i
 1. Python Documentation - docs.python.org/3/library
 2. StackOverflow.com - for small issues faced during the course of development.
 3. pandas.pydata.org - for information on pandas library.
+4. Udacity.com - for all the information on Python basics and Git basics
