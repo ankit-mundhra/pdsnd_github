@@ -97,6 +97,17 @@ def load_data(city, month, day):
     return df
 
 
+def hour_of_day_to_12_hour(hour_of_day):
+    if hour_of_day == 0:
+        return '12 AM to 1 AM'
+    if hour_of_day == 23:
+        return '11 PM to 12 AM'
+    elif hour_of_day <= 12:
+        return str(hour_of_day) + ' AM to ' + str(hour_of_day + 1) + ' PM'
+    else:
+        return str(hour_of_day - 12) + ' PM to ' + str(hour_of_day - 11) + ' PM'
+
+
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -115,7 +126,9 @@ def time_stats(df):
     # display the most common start hour
     # df['hour'] = df['Start Time'].dt.hour
     comm_hour = df['Start Time'].dt.hour.mode()[0]
-    print('The most common hour of travel in the given data is: {}'.format(comm_hour))
+    comm_hour_formatted = hour_of_day_to_12_hour(comm_hour)
+
+    print('The most common hour of travel in the given data is: {}'.format(comm_hour_formatted))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-' * 40)
