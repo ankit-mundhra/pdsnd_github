@@ -1,15 +1,22 @@
 ### Date created
-Include the date you created this project and README file.
+30th May, 2020. 
 
 ### Project Title
-Replace the Project Title
+Udacity Bikeshare Project
 
 ### Description
-Describe what your project is about and what it does
+In this project, we are going to analyze the bikeshare data provided by Udacity, and provide some insights back to the user depending on their inputs. 
+User Inputs: 
+a. City - Data from 3 cities are available and user can choose 1.
+b. Month - Data is available for the first 6 months of the year, and user can choose all or one of them.
+c. Day of Week - User can choose all days or a specific day of the week to get information for.
 
 ### Files used
-Include the files used
+1. bikeshare.py
+2. Input Files for Data - CSV format. 
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+1. Python Documentation - docs.python.org/3/library
+2. StackOverflow.com - for small issues faced during the course of development.
+3. pandas.pydata.org - for information on pandas library.
+4. Udacity.com - for all the information on Python basics and Git basics

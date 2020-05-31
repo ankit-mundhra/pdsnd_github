@@ -19,7 +19,8 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello and Welcome to my bikeshare project submission')
+    print('Hello and Welcome to Ankit\'s bikeshare project submission')
+    print('This is available at https://github.com/ankit1234us/pdsnd_github')
     print('Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
